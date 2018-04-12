@@ -1,0 +1,500 @@
+/*Basic styles*/
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+ {
+  border: 1px solid black;
+
+}
+
+/*Nav Bar*/
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  background-color: lightblue;
+  border-bottom: 1px solid black
+}
+
+.mobile_nav {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.img {
+  margin-left: 24px;
+  height: 50px;
+}
+
+.logo h3 {
+  font-size: 22px;
+  font-family: 'Noto Serif', serif;
+}
+
+.logo span {
+  color: grey;
+}
+
+.sign_in {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sign_in h4 {
+  margin-right: 16px;
+  font-size: 17px;
+  font-family: 'Alegreya', serif;
+  margin-bottom: 0px;
+}
+
+nav .sign_in h4:hover {
+  transition: all 0.15s ease-out 0.0s;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 575px) {
+  .mobile_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .mobile_nav img {
+    height: 45px;
+    padding: 10px 10px 8px 10px;
+  }
+
+  #first_logo {
+    margin-left: 40px;
+  }
+
+  #last_logo {
+    margin-right: 40px;
+  }
+
+  .logo, .sign_in {
+    display: none;
+  }
+
+  nav .mobile_nav img:hover {
+    transition: all 0.15s ease-out 0.0s;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
+/*Header*/
+
+header {
+  margin-top: 62px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: lightgrey;
+}
+
+header .images {
+  margin-left: 32px;
+  width: 60%;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+}
+
+header .side_info {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header .side_info h2 {
+  font-family: 'Noto Serif', serif;
+  font-size: 40px;
+}
+
+header .side_info h4 {
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+}
+
+header .side_info h5 {
+  padding-top: 10px;
+  margin-top: 15px;
+  width: 100%;
+  height: 50px;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 32px;
+}
+
+header .side_info h5:hover {
+  transition: all 0.25s ease-out 0.0s;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 575px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  header .images {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  header .side_info {
+    width: 80%;
+  }
+}
+
+/*banner*/
+
+.banner {
+  margin-left: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner .main {
+  width: 55%;
+}
+
+.banner .main img {
+  width: 100%;
+  height: 550px;
+}
+
+.banner .side_info {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.side_content {
+  border-left: 1px outset lightgrey;
+  padding-left: 50px;
+  padding-bottom: 0px;
+  padding-top: 50px;
+
+}
+
+.banner .side_info .side_content img {
+  float: left;
+}
+
+.side_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner .main h2 {
+  font-family: 'Noto Serif', serif;
+  font-size: 35px;
+}
+
+.banner .main p {
+  font-family: 'Crimson Text', serif;
+  font-size: 22px;
+}
+
+.banner .side_info .side_content h3 {
+  margin-left: 20px;
+  font-family: 'Noto Serif', serif;
+}
+
+.banner .side_info .side_content p {
+  margin-left: 20px;
+  font-family: 'Crimson Text', serif;
+}
+
+.banner .side_info .side_content a {
+  margin-left: 20px;
+  color: lightblue;
+  text-decoration: none;
+  font-family: 'Crimson Text', serif;
+}
+
+#name {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 575px) {
+  .banner .main {
+    display: none;
+  }
+
+  .banner .side_info {
+    align-items: center;
+    margin-left: 115px;
+  }
+
+  .banner .side_info .side_content h3 {
+    margin-top: 10px;
+    margin-left: 0px;
+    font-size: 25px;
+  }
+
+  .banner .side_info .side_content p {
+    margin-left: 0px;
+    margin-top: -22px;
+  }
+
+  .banner .side_info .side_content a {
+    margin-left: 0px;
+    margin-top: -15px;
+  }
+
+  .side_text {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .side_content {
+    border: none;
+  }
+
+  .banner .side_info .side_content img {
+    float: none;
+  }
+}
+
+/*Learning section*/
+
+.learning h2 {
+  border-top: 1px solid gray;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: 'Noto Serif', serif;
+  font-size: 32px;
+}
+
+.learning .learning_tabs {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.learning .learning_tabs .learning_tab {
+  height: 400px;
+  width: 350px;
+  background-color: lightblue;
+  margin-bottom: 50px;
+}
+
+.learning .learning_tabs .learning_tab:hover {
+  border: 2px outset gray;
+  transition: all 0.15s ease-out 0.0s;
+  margin: -2px;
+  cursor: pointer;
+}
+
+.learning .learning_tabs .learning_tab img {
+  width: 100%;
+}
+
+.learning_text h3 {
+  margin-left: 15px;
+  font-family: 'Noto Serif', serif;
+}
+
+.learning_text p {
+  margin-left: 15px;
+  font-family: 'Crimson Text', serif;
+}
+
+.learning .mobile_learning_tab {
+  display: none;
+}
+
+@media only screen and (max-width: 575px) {
+  .learning .learning_tabs {
+    display: none;
+  }
+
+  .learning .mobile_learning_tab {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  .learning .mobile_learning_tab h2 {
+    border: none;
+    font-size: 22px;
+    background-color: lightblue;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5px;
+  }
+
+  .learning .mobile_learning_tab h2:hover {
+    color: white;
+    transition: all 0.15s ease-out 0.0s;
+    cursor: pointer;
+  }
+}
+
+/*Thesis Exhibits*/
+
+.thesis_exhibits h2 {
+  padding-top: 15px;
+  border-top: 1px solid gray;
+  font-size: 32px;
+  font-family: 'Noto Serif', serif;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+.exhibits video {
+  width: 100%;
+  height: 620px;
+}
+
+.exhibits .exhibit h3 {
+  margin-left: 15px;
+  font-size: 24px;
+  margin-top: -40px;
+  font-family: 'Noto Serif', serif;
+}
+
+.exhibits .exhibit h4 {
+  margin-bottom: 60px;
+  margin-top: -5px;
+  margin-left: 15px;
+  font-family: 'Crimson Text', serif;
+}
+
+.exhibits {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exhibits .exhibit {
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+#video_exhibit {
+  width: 60%;
+}
+
+.exhibits .exhibit .exhibit_content {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 64px;
+  padding: 10px;
+}
+
+.exhibits .exhibit .exhibit_content:hover {
+    transition: all 0.15s ease-out 0.0s;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.exhibits .exhibit .exhibit_content .exhibit_text {
+  margin-top: 60px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 575px) {
+  .thesis_exhibits .exhibits {
+    flex-direction: column;
+    align-items: center;
+    margin-left: -32px;
+  }
+
+  #video_exhibit {
+    margin-bottom: -60px;
+  }
+
+  .thesis_exhibits .exhibits .exhibit video {
+    height: 320px;
+  }
+
+  .thesis_exhibits .exhibits .exhibit {
+    margin-bottom: 70px;
+  }
+
+  .exhibit_content {
+    width: 80%;
+    align-items: center;
+    margin-left: 32px;
+  }
+
+  .exhibit_content img {
+    height: 80%;
+    width: 40%;
+  }
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  background-color: lightgrey;
+  width: 100%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-top: 1px solid grey;
+}
+
+.terms_privacy {
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright {
+  margin-left: 24px;
+}
+
+.copyright p {
+  font-family: 'Alegreya', serif;
+}
+
+.terms_privacy p {
+  font-family: 'Crimson Text', serif;
+  margin-right: 10px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.terms_privacy p:hover {
+  transition: all 0.15s ease-out 0.0s;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 575px) {
+   {
+    border: 1px solid black;
+  }
+
+  .terms_privacy {
+    display: none;
+  }
